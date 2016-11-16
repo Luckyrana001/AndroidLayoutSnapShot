@@ -7,9 +7,10 @@
     android:layout_height="wrap_content">
     <Button
         android:text="Create SnapShot"
-        android:layout_width="373dp"
+        android:layout_width="385dp"
         android:layout_height="wrap_content"
         android:id="@+id/button"
+        android:background="@android:color/holo_green_dark"
         android:gravity="center"
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="0dp" />
@@ -19,12 +20,8 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:weightSum="1"
-    android:layout_marginTop="50dp"
-    tools:layout_constraintTop_creator="1"
-    tools:layout_constraintLeft_creator="1"
-    app:layout_constraintLeft_toLeftOf="@+id/button"
-    app:layout_constraintTop_toTopOf="@+id/button">
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp">
 
 
     <!--<TextView
@@ -50,16 +47,18 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="140dp"
     >
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/avatar"
         android:background="@android:color/black"
-        android:layout_alignParentBottom="true"
         android:src="@drawable/signature"
         android:scaleType="fitCenter"
-        />
+        android:layout_alignParentBottom="true"
+         />
 
 
 </RelativeLayout>

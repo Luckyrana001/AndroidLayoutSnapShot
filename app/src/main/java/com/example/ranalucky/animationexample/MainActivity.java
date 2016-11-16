@@ -67,11 +67,15 @@ public class MainActivity extends AppCompatActivity {
             fos.flush();
             fos.close();
 
-            Toast.makeText(getApplicationContext(),"SnapShot created successfuly.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"SnapShot created successfuly. Check internal storage main folder for the file.",Toast.LENGTH_SHORT).show();
         } catch (FileNotFoundException e) {
             Log.e("GREC", e.getMessage(), e);
+            Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_SHORT).show();
+
         } catch (IOException e) {
             Log.e("GREC", e.getMessage(), e);
+            Toast.makeText(getApplicationContext(),e.toString(),Toast.LENGTH_SHORT).show();
+
         }
     }}
 }
